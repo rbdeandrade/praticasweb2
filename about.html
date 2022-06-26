@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>inovARkids - Sobre</title>
+    <link rel="icon" type="image/x-icon" href="./img/favico.ico">
+    <script src="https://kit.fontawesome.com/24977366b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="./img/logo.svg" alt="inovARkids">
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="team.html">Equipa</a>
+                </li>
+                <li>
+                    <a href="https://inovamedialab.org/" target="_blank">iNOVA</a>
+                </li>
+                <li>
+                    <a href="#top" class="active">Sobre</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="https://inovarkids-app.web.app/" target="_blank">
+                        <i class="fa-solid fa-mobile-screen"> </i>
+                        <span> &nbsp; Aplicação </span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline" onclick="window.open('https://inovarkids-app.web.app/login', '_blank')">Entrar</button></li>
+                <li><button class="btn btn-dark" onclick="window.open('https://inovarkids-app.web.app/register', '_blank')">Registar</button></li>
+            </ul>
+
+    <!-- Hamburger Menu -->
+            <button type="button" class="hamburguer" id="menu-btn">
+                <span class="hamburguer-top"></span>
+                <span class="hamburguer-middle"></span>
+                <span class="hamburguer-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu Mobile-->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="team.html">Equipa</a>
+            </li>
+            <li>
+                <a href="https://inovamedialab.org/" target="_blank">iNOVA Medialab</a>
+            </li>
+            <li>
+                <a href="about.html">Sobre</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline" onclick="window.open('https://inovarkids-app.web.app/login', '_blank')">Entrar</button>
+            <button class="btn btn-dark" onclick="window.open('https://inovarkids-app.web.app/register', '_blank')">Registar</button>
+            <div>
+                <a href="https://inovarkids-app.web.app/" target="_blank">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span> &nbsp; Acesse nossa aplicação</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banners -->
+    <div class="main">
+    <section class="box box-a bg-green text-center py-md">
+        <div class="box-inner">
+            <h2 class="text-xl">Aprender Arduino de forma inovadora!</h2>
+            <p class="text-md">
+                Este projeto tem como objetivo desenvolver o interesse das crianças e adolescentes na plataforma Arduino com Realidade Aumentada (RA), através de uma forma interativa, lúdica e informativa. Apresentamos o sistema Arduino através de uma aplicação, na qual a criança através de um jogo constrói diferentes projetos.
+                <a href="#contact">Entre em Contacto</a> 
+            </p>
+        </div>
+    </section>
+
+    <section class="box box-f grid-col-2">
+        <div>
+            <img src="./img/banner-f3.jpg" alt="">
+            <div class="bg-blue py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Utilize a aplicação juntamente com o Arduino</h2>
+                    <p class="text-sm">A aplicação facilita o aprendizado do Arduino com Realidade Aumentada e desafios para completar.</p>
+                    <a href="https://inovarkids-app.web.app/" class="btn btn-light-outline">Acesse agora!</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="./img/banner-f4.jpg" alt="" />
+            <div class="bg-yellow py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Cards para utilizar com os projetos</h2>
+                    <p class="text-sm">Os Cards possuem identificadores para facilitar o aprendizado e descobrir os componentes com Realidade Aumentada.</p>
+                    <a href="https://github.com/rbdeandrade/inovARkidsAR/raw/main/print/inovarkids.pdf" class="btn btn-dark-outline">Descarregue agora!</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="box box-a bg-pink py-md" id="contact">
+        <div class="box-inner">
+            <div class="form">
+                <form id="form" onsubmit="document.getElementById('form').style.display = 'none';document.getElementById('sent').style.display = ''; return false">
+                    
+                    <h1 class="title"> Entre em contato</h1>
+
+                    <label for="fname">Primeiro Nome</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Seu primeiro nome.." required oninvalid="this.setCustomValidity('Coloque o seu primeiro nome aqui')" oninput="this.setCustomValidity('')">
+                
+                    <label for="lname">Último Nome</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Seu último nome.." required oninvalid="this.setCustomValidity('Coloque o seu último nome aqui')" oninput="this.setCustomValidity('')">
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email.." required oninvalid="this.setCustomValidity('Coloque o seu email aqui')" oninput="this.setCustomValidity('')">
+                
+                    <label for="subject">Assunto</label>
+                    <textarea id="subject" name="subject" placeholder="Escreva aqui.." style="height:200px" required oninvalid="this.setCustomValidity('Coloque o seu texto aqui')" oninput="this.setCustomValidity('')"></textarea>
+
+                    <input type="submit" value="Enviar">
+                
+                </form>
+                <div id="sent" class="text-center" style="display:none">
+                    <h1>Formulário enviado. Obrigado!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="divider"></div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook-square fa-2xl"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram-square fa-2xl"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <i class="fa-brands fa-youtube-square fa-2xl"></i>
+                </a>
+            </div>
+            <p>© 2022 inovARkids. Todos os direitos reservados. </p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

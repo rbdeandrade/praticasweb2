@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>inovARkids - Equipa</title>
+    <link rel="icon" type="image/x-icon" href="./img/favico.ico">
+    <script src="https://kit.fontawesome.com/24977366b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <img src="./img/logo.svg" alt="inovARkids">
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="#top" class="active">Equipa</a>
+                </li>
+                <li>
+                    <a href="https://inovamedialab.org/" target="_blank">iNOVA</a>
+                </li>
+                <li>
+                    <a href="about.html">Sobre</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="https://inovarkids-app.web.app/" target="_blank">
+                        <i class="fa-solid fa-mobile-screen"> </i>
+                        <span> &nbsp; Aplicação </span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline" onclick="window.open('https://inovarkids-app.web.app/login', '_blank')">Entrar</button></li>
+                <li><button class="btn btn-dark" onclick="window.open('https://inovarkids-app.web.app/register', '_blank')">Registar</button></li>
+            </ul>
+
+    <!-- Hamburger Menu -->
+            <button type="button" class="hamburguer" id="menu-btn">
+                <span class="hamburguer-top"></span>
+                <span class="hamburguer-middle"></span>
+                <span class="hamburguer-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu Mobile-->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="team.html">Equipa</a>
+            </li>
+            <li>
+                <a href="https://inovamedialab.org/" target="_blank">iNOVA Medialab</a>
+            </li>
+            <li>
+                <a href="about.html">Sobre</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline" onclick="window.open('https://inovarkids-app.web.app/login', '_blank')">Entrar</button>
+            <button class="btn btn-dark" onclick="window.open('https://inovarkids-app.web.app/register', '_blank')">Registar</button>
+            <div>
+                <a href="https://inovarkids-app.web.app/">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span> &nbsp; Acesse nossa aplicação</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banners -->
+    <div class="main">
+    <section class="box box-a bg-pink text-center py-md">
+        <div class="box-inner">
+            <h2 class="text-xl">Equipa</h2>
+            <p class="text-md">
+                Conheça a equipa que ajuda a construir esta aplicação.
+            </p>
+        </div>
+    </section>
+
+    <section class="box box-f grid-col-4">
+        <div>
+            <img src="./img/hugo.jpg" alt="Hugo">
+            <div class="bg-blue py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Hugo</h2>
+                    <p class="text-sm">Estudante da Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa no Mestrado de Novos Media e Práticas Web.</p>
+                    <a href="#" class="btn btn-light-outline">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="./img/igor.jpg" alt="Igor" />
+            <div class="bg-yellow py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Igor</h2>
+                    <p class="text-sm">Estudante da Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa no Mestrado de Novos Media e Práticas Web.</p>
+                    <a href="#" class="btn btn-dark-outline">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="./img/joao.jpg" alt="João" />
+            <div class="bg-green py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">João</h2>
+                    <p class="text-sm">Estudante da Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa no Mestrado de Novos Media e Práticas Web.</p>
+                    <a href="#" class="btn btn-light-outline">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="./img/renato.jpg" alt="Renato">
+            <div class="bg-red py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Renato</h2>
+                    <p class="text-sm">Estudante da Faculdade de Ciências Sociais e Humanas da Universidade Nova de Lisboa no Mestrado de Novos Media e Práticas Web.</p>
+                    <a href="#" class="btn btn-light-outline">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="divider"></div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook-square fa-2xl"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram-square fa-2xl"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <i class="fa-brands fa-youtube-square fa-2xl"></i>
+                </a>
+            </div>
+            <p>© 2022 inovARkids. Todos os direitos reservados. </p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
